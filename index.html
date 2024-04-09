@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Card</title>
+    <script src="12-JASON.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #4CAF50;
+        }
+
+        .card {
+            width: 300px;
+            padding: 20px;
+            box-shadow: 4px 15px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            background-color: white;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="card">
+    <h2>User Card</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" value="" name="name" placeholder="Enter your name" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" value="" name="username" placeholder="Enter your username" required>
+
+        <label for="username">UserID</label>
+        <input type="text" id="user-id" value="" name="username" placeholder="Enter your userId" required>
+
+
+        <button type="button" onclick="PostData()">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
